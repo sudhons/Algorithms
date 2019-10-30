@@ -6,8 +6,11 @@ import java.util.List;
  * DuplicateLists
  */
 public class ListOperations {
-  public static <T extends Comparable<? super T>> List<T> getIntersection(List<T> list1, List<T> list2) {
+  public static <T extends Comparable<? super T>> List<T> getIntersection(List<T> firstList, List<T> secondList) {
+    List<T> list1 = new ArrayList<>(firstList);
+    List<T> list2 = new ArrayList<>(secondList);
     List<T> result = new ArrayList<>();
+
     int index1 = 0;
     int index2 = 0;
     final int list1Size = list1.size();
