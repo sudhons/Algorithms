@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * DuplicateLists
  */
-public class DuplicateLists {
+public class ListOperations {
   public static <T extends Comparable<? super T>> List<T> getIntersection(List<T> list1, List<T> list2) {
     List<T> result = new ArrayList<>();
     int index1 = 0;
