@@ -6,7 +6,7 @@ import java.util.List;
  * DuplicateLists
  */
 public class DuplicateLists {
-  public static <T extends Comparable<? super T>> List<T> getDuplicates(List<T> list1, List<T> list2) {
+  public static <T extends Comparable<? super T>> List<T> getIntersection(List<T> list1, List<T> list2) {
     List<T> result = new ArrayList<>();
     int index1 = 0;
     int index2 = 0;
